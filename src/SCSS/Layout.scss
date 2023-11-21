@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'fonte';
+    src: url('../Fonts/Lexend-VariableFont_wght.ttf')
+    /* Adicione outros formatos se necessário (como .ttf, .svg, etc.) */
+  }
+
+body{
+    opacity: 1;
+    background-size: 80px 80px;
+    background-position: 0 0,40px 40px;
+}
+
+.logout{
+    background-color: #f0f0fc;
+    width: 100px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    &:hover{
+        background-color: rgb(229, 229, 229);
+    }
+}
+
+.layout{
+    background-color: #fae04f;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    .headerLayout{
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .parte1{
+        display: flex;
+        
+        .section1{
+            p{
+                font-family: 'fonte';
+            }
+            height: 700px;
+            width: 850px;
+            position: relative;
+            
+            .logo{
+                padding: 30px;
+                width: 100%;
+                height: 62.7%;
+            }
+            article{
+                h2{
+                    color: #04ADBF;
+                    font-family: 'fonte';
+                    width: 35%;
+                    display: flex;
+                    flex-direction: column; /* Empilha os elementos verticalmente */
+                    justify-content: center; /* Centraliza verticalmente */
+                    align-items: center;
+                }
+                margin-top: 10px;
+                display: flex;
+                flex-direction: row;
+                height: 36%;
+                
+                div{
+                    margin-left: 15px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column; /* Empilha os elementos verticalmente */
+                    justify-content: center; /* Centraliza verticalmente */
+                    align-items: center;
+                    p{
+                        padding: 5px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .section2{
+            p{
+                font-family: 'fonte';
+                size: 15;
+            }
+            h3{
+                font-family: 'fonte';
+                color: #04ADBF;
+            }
+            margin-left: 15px;
+            height: 700px;
+            width: 450px;
+            article{
+                div{ 
+                    padding: 5px;
+                    height: 200px;
+                }
+                
+            }
+        }
+    
+    }
+    .tituloVantagens{
+        font-family: 'fonte';
+        width: 200px;
+    }
+    .section3 {
+        display: flex;
+        flex-direction: row;
+      
+        .vantagem {
+          display: flex;
+          flex-direction: row;
+          img{
+            padding: 50px;
+            width: 250px;
+          }
+      
+          .textoVantagem {
+            font-family: 'fonte';
+            padding-left: 5px;
+            display: inline-block;
+            flex-wrap: wrap;
+      
+            p {
+              width: 70%; // Utilizando uma porcentagem para manter a proporção
+              max-width: 200px;
+            }
+          }
+        }
+      }
+    @media screen and (max-width: 1399px) {
+    .section3 {
+        flex-direction: column; // Altera para uma coluna em telas menores
+        article{
+
+            div{
+                width: 500px; 
+            }
+        }
+    }
+    
+    .vantagem {
+        flex-direction: column; // Altera para uma coluna em telas menores
+        margin-top: 30px;
+    }
+    
+    .textoVantagem p {
+
+        width: 100%; // Ocupa a largura total em telas menores
+    }
+    }
+        
+    @media screen and (max-width: 900px) {
+        .headerLayout{
+            h1{
+                font-size: medium;
+            }
+            p{
+                font-size: small;
+            }
+        }
+        .parte1 {
+            flex-direction: column; // Altera para uma coluna em telas menores
+            .section1{
+                margin-bottom: 15px;
+                width: 100%;
+            }
+           .section2{
+                margin-left: 0px;
+                width: 100%;
+           }
+        }
+        .section3 {
+            article{
+                img{
+                    width: 100px;
+                    height: 200px;
+                }
+            }
+            flex-direction: column; // Altera para uma coluna em telas menores
+        }
+        
+        .vantagem {
+            flex-direction: column; // Altera para uma coluna em telas menores
+            margin-top: 30px;
+        }
+        
+        .textoVantagem p {
+            width: 100%; // Ocupa a largura total em telas menores
+        }
+        }
+                
+
+}
